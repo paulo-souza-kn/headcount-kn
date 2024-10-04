@@ -1,0 +1,159 @@
+.p-or{
+  border: 0px;
+  color: #ababab;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.div-contactus{
+  margin-top: 7%;
+}
+
+.error-message {
+  color: red;
+  margin: 0px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    flex-direction: column; 
+  }
+
+  .logo-kn {
+    width: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+
+  .login-box {
+    width: 500px; /* Define a largura do quadrado */
+    height: 200px; /* Define a altura do quadrado, igual à largura */
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(148, 148, 148, 0.2);
+  }
+  
+  .user-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-option {
+    padding: 10px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+    width: 200px;
+    animation: slideInFromLeft  0.5s ease-in-out forwards;
+  }
+  
+  .user-option:hover {
+    background-color: rgb(229, 227, 227);
+  }
+  
+  .user-selected {
+    animation: slideInFromRight  0.5s ease-in-out forwards;
+    display: flex; /* Torna .user-selected um contêiner Flexbox */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+  }
+
+  .user-selected form{
+    animation: slideInFromRight  0.5s ease-in-out forwards;
+    display: flex; /* Torna .user-selected um contêiner Flexbox */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: 20px;
+  }
+
+  .user-selected div {
+    flex-direction: column;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center; /* Centraliza os botões verticalmente */
+  }
+
+  .user-selected input {
+    background-color: #f6f3f3;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 8px;
+    display: flex;
+    border: none;
+    border-radius: 3px;
+  }
+
+  .user-selected button {
+    background-color: #003369;
+    color: #ffffff;
+    border-radius: 3px;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: none;
+    display: flex;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .back-button div {
+    margin-top: 20px;
+  }
+
+  .back-button button {
+    margin-top: 20px;
+    background-color: #0099da;
+    color: #ffffff;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: none;
+    display: flex;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .user-selected button:hover {
+    background-color: #0099da;
+    border-radius: 3px;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: none;
+    display: flex;
+  }
+  
+  /* Definição da animação */
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(15%); /* Começa fora da tela à direita */
+      opacity: 0; /* Começa invisível */
+    }
+    to {
+      transform: translateX(0); /* Termina na posição original */
+      opacity: 1; /* Fica visível */
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-15%); /* Começa fora da tela à esquerda */
+      opacity: 0; /* Começa invisível */
+    }
+    to {
+      transform: translateX(0); /* Termina na posição original */
+      opacity: 1; /* Fica visível */
+    }
+  }
