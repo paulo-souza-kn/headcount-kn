@@ -1,0 +1,64 @@
+/* NavBar.css */
+
+.navbar {
+    background-color: #003369; /* Cor de fundo */
+    padding: 0.5rem; /* Espaçamento interno */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaça os itens ao máximo */
+    align-items: center; /* Alinha verticalmente no centro */
+}
+
+.navbar-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-link {
+    background-color: #003369; /* Cor de fundo */
+    padding: 0.5rem; /* Espaçamento interno */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaça os itens ao máximo */
+    align-items: center; /* Alinha verticalmente no centro */  
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    color: #ddd; /* Cor do texto ao passar o mouse */
+}
+
+.navbar-link.active {
+    background-color: #0099da; /* Cor de fundo */
+    padding: 0.5rem; /* Espaçamento interno */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaça os itens ao máximo */
+    align-items: center; /* Alinha verticalmente no centro */  
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-button {
+    background-color: #003369; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar o mouse */
+}
+
+.navbar-button:hover {
+    background-color: #0099da; /* Cor ao passar o mouse */
+}
+
+.navbar-logo-kn {
+    width: 170px;
+    object-fit: contain;
+    margin: 0px;
+  }
+
+.user-icon {
+    width: 20px;
+    object-fit: contain;
+    margin: 0px; 
+}

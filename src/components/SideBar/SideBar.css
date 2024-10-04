@@ -1,0 +1,69 @@
+/* sidebar.css */
+
+.sidebar {
+    background-color: #e5ebf0; /* Cor de fundo */
+    padding: 0.5rem; /* Espaçamento interno */
+    display: flex; /* Exibe os itens em linha */
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 4%;
+    transition: width 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+    box-shadow: none; /* Sem sombra inicialmente */
+}
+
+.sidebar.expanded {
+    width: 400px; /* Largura quando expandida */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Sombra externa */
+  }
+
+.sidebar-div {
+    justify-content: space-between; /* Espaça os itens ao máximo */
+}
+
+.sidebar-link {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    margin-right: 1rem; /* Espaçamento entre links */
+    font-size: 1.2rem; /* Tamanho da fonte */
+}
+
+.sidebar-link:hover {
+    color: #ddd; /* Cor do texto ao passar o mouse */
+}
+
+.sidebar-link.active {
+    background-color: #0099da; /* Cor de fundo */
+    padding: 0.5rem; /* Espaçamento interno */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaça os itens ao máximo */
+    align-items: center; /* Alinha verticalmente no centro */  
+    color: #fff;
+}
+
+.sidebar-button {
+    background-color: #003369; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar o mouse */
+}
+
+.sidebar-button:hover {
+    background-color: #0099da; /* Cor ao passar o mouse */
+}
+
+.toggle-btn {
+    background-color: #0099da;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #007bb5; /* Cor ao passar o mouse */
+  }

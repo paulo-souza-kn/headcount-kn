@@ -3,7 +3,7 @@ import { useAuth } from './AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 
-import "./Login.css"; // CSS da animação
+import "./Login.css";
 
 const Login = () => {
   const [isUserSelected, setIsUserSelected] = useState(null);

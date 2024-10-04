@@ -1,3 +1,9 @@
+.logo-kn {
+  width: 300px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
 .p-or{
   border: 0px;
   color: #ababab;
@@ -20,12 +26,6 @@
     height: 100vh;
     background-color: #ffffff;
     flex-direction: column; 
-  }
-
-  .logo-kn {
-    width: 300px;
-    object-fit: contain;
-    margin-bottom: 20px;
   }
 
   .login-box {

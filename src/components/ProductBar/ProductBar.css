@@ -1,0 +1,48 @@
+/* productbar.css */
+
+.productbar {
+    background-color: #fff; /* Cor de fundo */
+    padding: 0.5rem; /* Espaçamento interno */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Espaça os itens ao máximo */
+    height: 100%;
+    width: 100%;
+}
+
+.productbar-link {
+    color: rgb(190, 84, 84); /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    margin-right: 1rem; /* Espaçamento entre links */
+    font-size: 1.2rem; /* Tamanho da fonte */
+}
+
+.productbar-link:hover {
+    color: #ddd; /* Cor do texto ao passar o mouse */
+}
+
+.productbar-link.active {
+    background-color: #0099da; /* Cor de fundo */
+    padding: 0.5rem; /* Espaçamento interno */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaça os itens ao máximo */
+    align-items: center; /* Alinha verticalmente no centro */  
+    color: #fff;
+}
+
+.productbar-button {
+    background-color: #003369; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar o mouse */
+}
+
+.productbar-button:hover {
+    background-color: #0099da; /* Cor ao passar o mouse */
+}
+
+.productbar-a {
+    color: #003369;
+    font-weight: bold;
+}
