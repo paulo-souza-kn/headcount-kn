@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useAuth } from './AuthContext';
 import { useNavigate } from 'react-router-dom';
-
+import { NavLink } from "react-router-dom";
 
 import "./Login.css";
 
@@ -27,7 +27,6 @@ const Login = () => {
       const data = await response.json();
 
       if (data.length > 0) {
-        alert("Login bem-sucedido!");
         setErrorMessage("");
         login();
         navigate('/home');
@@ -67,6 +66,7 @@ const Login = () => {
             <input className="user-selected" type="password" placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)} required />
               <button className="user-selected" type="submit">Login</button>
             </form>
+            <p  className="user-selected">Or <NavLink to="/Register">Register here</NavLink></p>
             {errorMessage && <p className="error-message">{errorMessage}</p>}
           </div>
         )}

@@ -1,0 +1,90 @@
+/* Estilos para o container principal */
+.register-kn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    flex-direction: column;
+}
+
+/* Estilos para a imagem */
+.register-kn img {
+    width: 300px;
+    object-fit: contain;
+    margin: 20px;
+}
+
+/* Estilos para a registerbox */
+.registerbox {
+    margin: 20px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(148, 148, 148, 0.2);
+    padding: 20px; /* Adicionado padding para melhorar a aparência */
+}
+
+/* Estilos para o formulário */
+.register-kn form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adiciona um espaçamento entre os inputs */
+}
+
+/* Estilos para os inputs */
+.register-kn input {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+
+.register-kn p {
+    margin: 0px;
+    text-align: left;
+    color: #003369;
+    font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";;
+}
+
+.register-kn h1 {
+    margin: 0px;
+    text-align: left;
+    color: #003369;
+    font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";;
+}
+
+.register-kn button {
+    background-color: #0099da;
+    color: #ffffff;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: none;
+    display: flex;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .register-kn button:hover {
+    background-color: #003369;
+    border-radius: 3px;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    border: none;
+    display: flex;
+  }
+
+    /* Definição da animação */
+    @keyframes slideInFromRight {
+        from {
+          transform: translateX(15%); /* Começa fora da tela à direita */
+          opacity: 0; /* Começa invisível */
+        }
+        to {
+          transform: translateX(0); /* Termina na posição original */
+          opacity: 1; /* Fica visível */
+        }
+      }

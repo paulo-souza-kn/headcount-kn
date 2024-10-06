@@ -15,6 +15,8 @@
 .sidebar.expanded {
     width: 400px; /* Largura quando expandida */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Sombra externa */
+    display: flex;
+    flex-direction: column; /* Exibe os itens em linha */
   }
 
 .sidebar-div {
@@ -35,7 +37,7 @@
 .sidebar-link.active {
     background-color: #0099da; /* Cor de fundo */
     padding: 0.5rem; /* Espaçamento interno */
-    display: flex; /* Exibe os itens em linha */
+    display: column; /* Exibe os itens em linha */
     justify-content: space-between; /* Espaça os itens ao máximo */
     align-items: center; /* Alinha verticalmente no centro */  
     color: #fff;
@@ -60,6 +62,7 @@
     border: none;
     padding: 10px;
     margin: 10px;
+    width: 40px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -67,3 +70,10 @@
   .toggle-btn:hover {
     background-color: #007bb5; /* Cor ao passar o mouse */
   }
+
+  .sidebar-content {
+    flex-grow: 0.8; /* Faz a área de conteúdo ocupar o máximo de espaço possível */
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
