@@ -2,6 +2,9 @@ import "./SideBar.css";
 import React, { useState } from 'react';
 import { useAuth } from '../Login/AuthContext';
 import { NavLink } from "react-router-dom";
+import { AiFillCaretLeft, AiFillCaretRight, AiFillHome, AiFillSetting } from "react-icons/ai";
+import { LuPlus } from "react-icons/lu";
+import { FaUser } from "react-icons/fa";
 
 const SideBar = () => {
     const { isAuthenticated } = useAuth();
@@ -19,24 +22,28 @@ const SideBar = () => {
         <div className={`sidebar ${isExpanded ? 'expanded' : ''}`}>
             <div className="sidebar-content">
                 <nav>
-                <button className="toggle-btn" onClick={toggleSidebar}>
-                    A
+                <button className={`toggle-btn ${isExpanded ? 'expanded' : ''}`} onClick={toggleSidebar}>
+                    {isExpanded ? <AiFillHome color="#003369" size={30} /> : <AiFillHome color="#003369" size={30} />}
+                    {isExpanded ? " Home" : ""}
                 </button>
-                <button className="toggle-btn" onClick={toggleSidebar}>
-                    B
+                <button className={`toggle-btn ${isExpanded ? 'expanded' : ''}`} onClick={toggleSidebar}>
+                    {isExpanded ? <AiFillSetting color="#003369" size={30} /> : <AiFillSetting color="#003369" size={30} />}
+                    {isExpanded ? " Report" : ""}
                 </button>
-                <button className="toggle-btn" onClick={toggleSidebar}>
-                    C
+                <button className={`toggle-btn ${isExpanded ? 'expanded' : ''}`} onClick={toggleSidebar}>
+                    {isExpanded ? <LuPlus color="#003369" size={30}/> : <LuPlus color="#003369" size={30}/>}
+                    {isExpanded ? " Requsitions" : ""}
                 </button>
-                <button className="toggle-btn" onClick={toggleSidebar}>
-                    D
+                <button className={`toggle-btn ${isExpanded ? 'expanded' : ''}`} onClick={toggleSidebar}>
+                    {isExpanded ? <FaUser color="#003369" size={30} /> : <FaUser color="#003369" size={30} />}
+                    {isExpanded ? "Solicitations" : ""}
                 </button>
                     {/*<NavLink className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"} to="/Home">Home</NavLink>*/}
                 </nav>
             </div>
             <div className="sidebar-footer">
                 <button className="toggle-btn" onClick={toggleSidebar}>
-                    {isExpanded ? '<' : '>'}
+                    {isExpanded ? <AiFillCaretLeft color="#003369" size={30} /> : <AiFillCaretRight color="#003369" size={30}/>}
                 </button>
             </div>
         </div>
