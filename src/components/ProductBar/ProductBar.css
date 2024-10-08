@@ -1,10 +1,11 @@
 /* productbar.css */
 
 .productbar {
+    margin-left: 50px;
     background-color: #fff; /* Cor de fundo */
     padding: 0.5rem; /* Espaçamento interno */
     display: flex; /* Exibe os itens em linha */
-    justify-content: center; /* Espaça os itens ao máximo */
+    justify-content: left; /* Espaça os itens ao máximo */
     height: 100%;
     width: 100%;
 }

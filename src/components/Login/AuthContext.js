@@ -3,16 +3,24 @@ import React, { createContext, useContext, useState } from 'react';
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-    const login = () => setIsAuthenticated(true);
-    const logout = () => setIsAuthenticated(false);
-  
+    const [user , setUser] = useState(null); // Novo estado para armazenar o usuário
+
+    const login = (username) => {
+        setIsAuthenticated(true);
+        setUser({ username }); // Armazena o nome de usuário
+    };
+
+    const logout = () => {
+        setIsAuthenticated(false);
+        setUser(null); // Reseta o usuário no logout
+    };
+
     return (
-      <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
-        {children}
-      </AuthContext.Provider>
+        <AuthContext.Provider value={{ isAuthenticated, user, login, logout }}>
+            {children}
+        </AuthContext.Provider>
     );
-  };
-  
-  export const useAuth = () => useContext(AuthContext);
+};
+
+export const useAuth = () => useContext(AuthContext);

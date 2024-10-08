@@ -42,9 +42,9 @@
     background-color: #003369; /* Cor do botão */
     color: white; /* Cor do texto do botão */
     border: none; /* Remove a borda */
-    padding: 0.5rem 1rem; /* Espaçamento interno */
     font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Mostra o cursor de ponteiro ao passar o mouse */
+    margin-right: 10px;
 }
 
 .navbar-button:hover {
@@ -61,4 +61,58 @@
     width: 20px;
     object-fit: contain;
     margin: 0px; 
+}
+
+.dropdown-box {
+    position: absolute;
+    top: 54px; /* Desce o box a partir da posição do botão */
+    right: 70px;
+    background-color: #e5ebf0;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 300px;
+    z-index: 1000; /* Para garantir que esteja à frente de outros elementos */
+    padding: 0px;
+  }
+
+  .dropdown-box ul {
+    padding: 0px;
+    height: 200px;
+}
+
+.dropdown-box button {
+    font-family: Suisse Intl, Open Sans, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #003369;
+    border: 0px;
+    font-size: 20px;
+    background-color: #e5ebf0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.dropdown-box button:hover {
+    font-family: Suisse Intl, Open Sans, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #003369;
+    border: 0px;
+    font-size: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.dropdown-box p{
+    font-family: Suisse Intl, Open Sans, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #003369;
+    border: 0px;
+    font-size: 20px;
+    background-color: #e5ebf0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }

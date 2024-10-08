@@ -13,10 +13,12 @@ const ProductBar = () => {
       }
 
     return(
-        <nav className='productbar'>
-            <a className="productbar-a">CL Human Resources Management</a>
-            {/*<NavLink className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"} to="/Home">Home</NavLink>*/}
+        <div className="productbar">
+            <nav className='productbar'>
+                <a className="productbar-a">CL Human Resources Management</a>
+                {/*<NavLink className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"} to="/Home">Home</NavLink>*/}
         </nav>
+        </div>
     );
 };
 export default ProductBar;
