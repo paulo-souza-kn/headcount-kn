@@ -6,6 +6,10 @@
     display: flex; /* Exibe os itens em linha */
     justify-content: space-between; /* Espaça os itens ao máximo */
     align-items: center; /* Alinha verticalmente no centro */
+    position: fixed; /* Fixa a navbar no topo */
+    top: 0; /* Posiciona a navbar no topo */
+    width: 100%; /* Garante que a navbar ocupe toda a largura da tela */
+    z-index: 2000; /* Para garantir que a navbar fique à frente de outros elementos */
 }
 
 .navbar-div {

@@ -8,6 +8,7 @@
     justify-content: left; /* Espaça os itens ao máximo */
     height: 100%;
     width: 100%;
+    margin-top: 25px;
 }
 
 .productbar-link {
