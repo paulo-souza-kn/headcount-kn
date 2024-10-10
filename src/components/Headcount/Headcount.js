@@ -1,7 +1,7 @@
 import React from 'react';
 import DynamicTable from "../Table/Table"; // Verifique se o caminho está correto
 import { HiUserGroup } from "react-icons/hi";
-import './Headcount';
+import './Headcount.css';
 
 const Headcount = () => {
   return (

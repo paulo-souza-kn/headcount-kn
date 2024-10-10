@@ -46,7 +46,7 @@
     height: 8vw;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 120px;
 }
 
 .home-headcount-pagename p {
@@ -65,8 +65,8 @@
 .headcount {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    margin-top: 250px;
+    width: 95%;
+    margin-top: 50px;
 }
 
 
