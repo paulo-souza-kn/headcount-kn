@@ -42,6 +42,9 @@ const NavBar = () => {
                 </button>
                 </div>
             </nav>
+            <div className="product-name">
+                <p>CL Management</p>
+            </div>
             {isExpanded && (
                     <div className="dropdown-box">
                         <p>{user ? user.username : "Usuário"}</p>

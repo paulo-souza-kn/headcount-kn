@@ -1,4 +1,4 @@
-.home-dashboard {
+.home-headcount {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
     flex-direction: column;
 }
 
-.home-dashboard-div {
+.home-headcount-div {
     width: 40vw; /* Responsivo: ajusta conforme a largura da tela */
     max-width: 40vw; /* Limite máximo */
     margin-top: 10px;
@@ -24,13 +24,13 @@
     flex-direction: column;
 }
 
-.home-dashboard-div {
+.home-headcount-div {
     flex: 1 1 45%; /* Ajuste a largura do gráfico para ocupar até 45% da tela */
     max-width: 900px; /* Limite máximo para gráficos */
     min-width: 300px; /* Limite mínimo para telas pequenas */
 }
 
-.home-dashboard-div p{
+.home-headcount-div p{
     margin-left: 10px;
     font-family: Suisse Intl, Open Sans, Helvetica, Arial, sans-serif;
     font-weight: 600;
@@ -40,16 +40,16 @@
 }
 
 
-.home-dashboard-pagename {
+.home-headcount-pagename {
     display: flex;
     background-color: rgb(247, 247, 247);
     height: 8vw;
     align-items: center;
-    margin-top: 120px;
     width: 100%;
+    margin-top: 20px;
 }
 
-.home-dashboard-pagename p {
+.home-headcount-pagename p {
     margin-left: 10px;
     font-family: Suisse Intl, Open Sans, Helvetica, Arial, sans-serif;
     font-weight: 600;
@@ -57,76 +57,77 @@
     font-size: 3vw; /* Fonte responsiva baseada na largura da viewport */
 }
 
-.home-dashboard-chart {
+.home-headcount-chart {
     width: 100%; /* Preenche a largura disponível */
     max-width: 900px; /* Limite máximo */
 }
 
-.dashboard {
+.headcount {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-top: 250px;
 }
 
 
 /* Media Queries para telas menores */
 @media (max-width: 1024px) {
-    .home-dashboard-div {
+    .home-headcount-div {
         margin-left: 1%;
         width: 90vw;
     }
 
-    .home-dashboard-pagename p {
+    .home-headcount-pagename p {
         font-size: 4vw; /* Aumentar a fonte em telas menores */
     }
 
-   .home-dashboard-div p{
+   .home-headcount-div p{
     font-size: 2vw; /* Aumentar a fonte em telas menores */
    }
 }
 
 /* Media Queries para telas menores */
 @media (max-width: 732px) {
-    .home-dashboard-div {
+    .home-headcount-div {
         margin-left: 1%;
         width: 90vw;
     }
 
-    .home-dashboard-pagename p {
+    .home-headcount-pagename p {
         font-size: 4vw; /* Aumentar a fonte em telas menores */
     }
 
-   .home-dashboard-div p{
+   .home-headcount-div p{
     font-size: 2vw; /* Aumentar a fonte em telas menores */
    }
 }
 
 @media (max-width: 640px) {
-    .home-dashboard-div {
+    .home-headcount-div {
         margin-left: 0;
         width: 100vw; /* Ocupa toda a largura da tela */
     }
 
-    .home-dashboard-pagename p {
+    .home-headcount-pagename p {
         font-size: 6vw; /* Aumentar a fonte em telas menores */
     }
 
-   .home-dashboard-div p{
+   .home-headcount-div p{
     font-size: 4vw; /* Aumentar a fonte em telas menores */
    }
 }
 
 @media (max-width: 300px) {
-    .home-dashboard-div {
+    .home-headcount-div {
         margin-left: 0;
         width: 100vw; /* Ocupa toda a largura da tela */
     }
 
-    .home-dashboard-pagename p {
+    .home-headcount-pagename p {
         font-size: 5vw; /* Aumentar a fonte em telas menores */
     }
 
-   .home-dashboard-div p{
+   .home-headcount-div p{
     font-size: 3vw; /* Aumentar a fonte em telas menores */
    }
 }

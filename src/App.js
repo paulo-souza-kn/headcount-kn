@@ -4,6 +4,7 @@ import LoginPage from './pages/Login.js';
 import HomePage from './pages/Home.js';
 import RegisterPage from './pages/Register.js';
 import HeadcountPage from './pages/Headcount.js';
+import EditPage from './pages/EditPage.js';
 
 //config react router
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/About" element={<PrivateRoute><HomePage /></PrivateRoute>}></Route>
           <Route path="/Account" element={<PrivateRoute><HomePage /></PrivateRoute>}></Route>
           <Route path="/Headcount" element={<PrivateRoute><HeadcountPage /></PrivateRoute>}></Route>
+          <Route path="/edit/:id" element={<EditPage />} />
           <Route path="/Register" element={<RegisterPage />}></Route>
         </Routes>
         </BrowserRouter>

@@ -11,9 +11,9 @@ const SideBar = () => {
     const [isExpanded, setIsExpanded] = useState(false);
     const navigate = useNavigate();
 
-    const handleNavigation = () => {
+    const handleNavigation = (page) => {
         // Redireciona para a página "Headcount"
-        navigate('/Headcount');
+        navigate(page);
       };
     
 
@@ -22,28 +22,28 @@ const SideBar = () => {
     };
 
     if (!isAuthenticated) {
-        return null; // Não exibe o sidebar se não estiver autenticado
+        return null; // Não exibe o sidebar se não estiver autenticado  
     }
 
     return (
         <div className={`sidebar ${isExpanded ? 'expanded' : ''}`}>
             <div className="sidebar-content">
                 <nav>
-                <button className={`toggle-btn ${isExpanded ? 'expanded' : ''}`}>
+                <button className={`toggle-btn ${isExpanded ? 'expanded' : ''}`} onClick={() => {handleNavigation('/Home');}}>
                     {isExpanded ? <AiFillHome color="#003369" size={30} /> : <AiFillHome color="#003369" size={30} />}
-                    {isExpanded ? " Home" : ""}
+                    {isExpanded ? <p>Home</p> : ""}
                 </button>
                 <button className={`toggle-btn ${isExpanded ? 'expanded' : ''}`}>
                     {isExpanded ? <AiFillSetting color="#003369" size={30} /> : <AiFillSetting color="#003369" size={30} />}
-                    {isExpanded ? " Report" : ""}
+                    {isExpanded ? <p>Procurement</p> : ""}
                 </button>
-                <button className={`toggle-btn ${isExpanded ? 'expanded' : ''}`} onClick={() => {handleNavigation();}}>
+                <button className={`toggle-btn ${isExpanded ? 'expanded' : ''}`} onClick={() => {handleNavigation('/Headcount');}}>
                     {isExpanded ? <LuPlus color="#003369" size={30}/> : <LuPlus color="#003369" size={30}/>}
-                    {isExpanded ? " Headcount" : ""}
+                    {isExpanded ? <p>Headcount</p> : ""}
                 </button>
                 <button className={`toggle-btn ${isExpanded ? 'expanded' : ''}`}>
                     {isExpanded ? <FaUser color="#003369" size={30} /> : <FaUser color="#003369" size={30} />}
-                    {isExpanded ? "Solicitations" : ""}
+                    {isExpanded ? <p>Registro</p> : ""}
                 </button>
                 </nav>
             </div>

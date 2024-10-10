@@ -9,7 +9,7 @@
     position: fixed; /* Fixa a navbar no topo */
     top: 0; /* Posiciona a navbar no topo */
     width: 100%; /* Garante que a navbar ocupe toda a largura da tela */
-    z-index: 2000; /* Para garantir que a navbar fique à frente de outros elementos */
+    z-index: 3; /* Para garantir que a navbar fique à frente de outros elementos */
 }
 
 .navbar-div {
@@ -119,4 +119,26 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+
+.product-name{
+    background-color: #ffffff; /* Cor de fundo */
+    padding: 0.5rem; /* Espaçamento interno */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: left; /* Espaça os itens ao máximo */
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    margin-top: 50px;
+    position: fixed;
+    z-index: 1;
+}
+
+.product-name p {
+    margin-left: 100px;
+    font-family: Suisse Intl, Open Sans, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #003369;
+    font-size: 2vw;
 }
